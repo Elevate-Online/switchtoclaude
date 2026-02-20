@@ -38,7 +38,7 @@ export default function EmailCaptureInline({
           value: email,
         },
         {
-          name: 'source',
+          name: 'lead_source',
           value: source,
         }
       ];

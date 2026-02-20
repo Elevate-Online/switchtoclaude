@@ -50,7 +50,7 @@ export default function Home() {
         </div>
         <div className="mt-6 text-center">
           <Link
-            href="https://twitter.com/hashtag/QuitGPT"
+            href="https://quitgpt.org"
             target="_blank"
             className="text-claude-orange hover:underline font-medium"
           >
@@ -66,7 +66,7 @@ export default function Home() {
             The Problem
           </h2>
           <p className="text-xl text-gray-700">
-            You&apos;ve trained ChatGPT for months. Your tone. Your context. Your workflows. Starting over feels like losing everything.
+            You&apos;ve trained ChatGPT for months. Your tone. Your context. Your workflows. Switching from ChatGPT to Claude feels like losing everything.
           </p>
           <p className="text-2xl font-semibold text-claude-orange">
             This guide fixes that.
