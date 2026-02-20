@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-gray-800 mt-20">
+    <footer className="w-full border-t border-gray-200 mt-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-wrap gap-6 text-sm text-gray-400">
+          <div className="flex flex-wrap gap-6 text-sm text-gray-600">
             <Link href="/guide" className="hover:text-claude-orange transition-colors">
               Guide
             </Link>
@@ -19,7 +19,7 @@ export default function Footer() {
               LinkedIn
             </Link>
           </div>
-          <div className="text-sm text-gray-400">
+          <div className="text-sm text-gray-600">
             &copy; 2026 Elevate Online
           </div>
         </div>

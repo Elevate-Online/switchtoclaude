@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-gray-800">
+    <header className="w-full border-b border-gray-200 bg-white">
       <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold hover:text-claude-orange transition-colors">
+        <Link href="/" className="text-xl font-bold text-gray-900 hover:text-claude-orange transition-colors">
           Switch to Claude
         </Link>
         <Link

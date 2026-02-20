@@ -6,7 +6,9 @@
       "Bash(git add:*)",
       "Bash(npm install)",
       "Bash(npm run build:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Next.js site for switchtoclaude.com\n\n- Landing page with email capture and value propositions\n- Full migration guide page with markdown rendering\n- Thank you page for post-signup\n- HubSpot Forms API integration for email capture\n- Dark theme with Claude orange accent colors\n- Mobile-first responsive design\n- All pages statically generated for optimal performance\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Next.js site for switchtoclaude.com\n\n- Landing page with email capture and value propositions\n- Full migration guide page with markdown rendering\n- Thank you page for post-signup\n- HubSpot Forms API integration for email capture\n- Dark theme with Claude orange accent colors\n- Mobile-first responsive design\n- All pages statically generated for optimal performance\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "WebSearch",
+      "Bash(git remote add:*)"
     ],
     "deny": [],
     "ask": []

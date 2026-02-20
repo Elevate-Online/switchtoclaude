@@ -87,7 +87,7 @@ export default function EmailCaptureInline({
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Your name"
-            className="px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-claude-orange transition-colors"
+            className="px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-claude-orange focus:ring-2 focus:ring-claude-orange focus:ring-opacity-20 transition-all"
           />
         )}
         <div className="flex flex-col sm:flex-row gap-3">
@@ -97,17 +97,20 @@ export default function EmailCaptureInline({
             onChange={(e) => setEmail(e.target.value)}
             placeholder={placeholder}
             required
-            className="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-claude-orange transition-colors"
+            className="flex-1 px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-claude-orange focus:ring-2 focus:ring-claude-orange focus:ring-opacity-20 transition-all"
           />
           <button
             type="submit"
             disabled={isSubmitting}
-            className="px-6 py-3 bg-claude-orange hover:bg-claude-coral text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+            className="px-6 py-3 bg-claude-orange hover:bg-claude-coral text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap shadow-sm hover:shadow-md"
           >
             {isSubmitting ? 'Sending...' : buttonText}
           </button>
         </div>
-        {error && <p className="text-red-400 text-sm">{error}</p>}
+        {error && <p className="text-red-600 text-sm">{error}</p>}
+        <p className="text-xs text-gray-500 text-center">
+          No spam. Unsubscribe anytime. Your data is secure.
+        </p>
       </div>
     </form>
   );
