@@ -47,7 +47,7 @@ export default function EmailCapture({
   if (status === 'success') {
     return (
       <div className="w-full max-w-md mx-auto rounded-lg bg-purple-50 p-4 text-purple-800 text-sm text-center">
-        ✓ You're in! Check your inbox for a confirmation email.
+        ✓ You&apos;re in! Check your inbox for a confirmation email.
       </div>
     );
   }
