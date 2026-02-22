@@ -3,7 +3,7 @@ import path from 'path';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GuideContent from '@/components/GuideContent';
-import EmailCaptureInline from '@/components/EmailCaptureInline';
+import EmailCaptureConvertKit from '@/components/EmailCaptureConvertKit';
 import Link from 'next/link';
 
 export const metadata = {
@@ -53,7 +53,7 @@ export default async function GuidePage() {
           <p className="text-gray-700 mb-6">
             Join the email list for ongoing updates, skill templates, and workflow guides.
           </p>
-          <EmailCaptureInline buttonText="Join the List" />
+          <EmailCaptureConvertKit tagId="16393383" buttonText="Get Free Guide" />
         </div>
       </article>
 

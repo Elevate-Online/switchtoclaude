@@ -70,7 +70,7 @@ That's it. Three pages. Ship fast.
    - What Claude can do that ChatGPT can't — Projects, Skills, MCP integrations
 
 5. **Who Made This**
-   - Brief Nicole bio: "Built by Nicole Patten. Ex-Google engineer (7 years). Runs her entire consulting business from Claude Projects."
+   - Brief Nicole bio: "Built by Nicole Patten. Ex-Google engineer (7 years). Runs her entire consulting business using Claude."
    - Photo if available
 
 6. **Final CTA**
@@ -199,7 +199,7 @@ The full guide content is provided in `/content/guide.md`. Do not rewrite or sum
 - **This site:** switchtoclaude.com
 - **Course site:** claudeforeveryone.com
 - **Main business:** elevateonline.com
-- **Nicole's LinkedIn:** linkedin.com/in/njpatten
+- **Nicole's LinkedIn:** linkedin.com/in/npatten
 
 ---
 

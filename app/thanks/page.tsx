@@ -52,7 +52,7 @@ export default function ThanksPage() {
           <div className="pt-12 text-sm text-gray-600">
             <p>
               Built by{' '}
-              <Link href="https://linkedin.com/in/njpatten" target="_blank" className="text-claude-orange hover:underline">
+              <Link href="https://linkedin.com/in/npatten" target="_blank" className="text-claude-orange hover:underline">
                 Nicole Patten
               </Link>
               {' '}at{' '}

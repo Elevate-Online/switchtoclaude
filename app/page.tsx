@@ -1,5 +1,6 @@
-import EmailCaptureInline from '@/components/EmailCaptureInline';
+import EmailCaptureConvertKit from '@/components/EmailCaptureConvertKit';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -15,11 +16,74 @@ export default function Home() {
             Your ChatGPT training, workflows, and context — moved to Claude in 15 minutes.
           </p>
           <div className="pt-4">
-            <EmailCaptureInline />
+            <EmailCaptureConvertKit tagId="16393383" buttonText="Get Free Guide" />
           </div>
-          <p className="text-sm text-gray-500">
-            Join 700,000+ people making the switch
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm">
+            <p className="text-gray-500">
+              Join 700,000+ people making the switch
+            </p>
+            <span className="hidden sm:inline text-gray-300">•</span>
+            <Link
+              href="https://quitgpt.org"
+              target="_blank"
+              className="text-claude-orange hover:underline font-medium"
+            >
+              #QuitGPT movement →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* #QuitGPT Movement */}
+      <section className="bg-gray-900 py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="flex-shrink-0">
+              <Image
+                src="/quitgpt-logo.svg"
+                alt="QuitGPT movement logo"
+                width={144}
+                height={144}
+                className="w-28 h-28 md:w-36 md:h-36 rounded-full"
+              />
+            </div>
+            <div className="text-center md:text-left space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-white">
+                1.2 Million People Have Joined{' '}
+                <span className="text-claude-orange">#QuitGPT</span>
+              </h2>
+              <p className="text-gray-300 text-lg">
+                OpenAI&apos;s president donated <span className="text-white font-semibold">$25 million</span> to Trump&apos;s Super PAC. Their CEO gave $1M to the Inaugural Fund. ICE uses GPT-4 for resume screening. The #QuitGPT movement is a grassroots boycott — and it&apos;s growing fast.
+              </p>
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                <Link
+                  href="https://quitgpt.org"
+                  target="_blank"
+                  className="inline-flex items-center gap-2 text-claude-orange hover:text-white transition-colors font-medium"
+                >
+                  Learn more at quitgpt.org
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 pt-10 border-t border-gray-700">
+            <div className="text-center">
+              <p className="text-3xl md:text-4xl font-bold text-claude-orange">$25M</p>
+              <p className="text-gray-400 text-sm mt-1">donated to Trump&apos;s Super PAC</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl md:text-4xl font-bold text-claude-orange">$125M+</p>
+              <p className="text-gray-400 text-sm mt-1">spent opposing AI regulations</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl md:text-4xl font-bold text-claude-orange">1.2M+</p>
+              <p className="text-gray-400 text-sm mt-1">people boycotting ChatGPT</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -47,15 +111,6 @@ export default function Home() {
               Claude Projects, Skills, and MCP integrations make it better for serious work, not just chat.
             </p>
           </div>
-        </div>
-        <div className="mt-6 text-center">
-          <Link
-            href="https://quitgpt.org"
-            target="_blank"
-            className="text-claude-orange hover:underline font-medium"
-          >
-            Join the #QuitGPT movement →
-          </Link>
         </div>
       </section>
 
@@ -179,7 +234,7 @@ export default function Home() {
           </h2>
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm">
             <p className="text-gray-700 mb-4">
-              Built by <span className="font-semibold text-gray-900">Nicole Patten</span>. Ex-Google engineer (7 years). Runs her entire consulting business from Claude Projects.
+              Built by <span className="font-semibold text-gray-900">Nicole Patten</span>. Ex-Google engineer (7 years). Runs her entire consulting business using Claude.
             </p>
             <p className="text-gray-700">
               Nicole helps teams build AI-powered workflows through{' '}
@@ -205,7 +260,7 @@ export default function Home() {
           <p className="text-lg text-gray-700">
             Free guide + bonus: skill templates and prompt files
           </p>
-          <EmailCaptureInline buttonText="Get the Free Guide" />
+          <EmailCaptureConvertKit tagId="16393383" buttonText="Get Free Guide" />
         </div>
       </section>
 
