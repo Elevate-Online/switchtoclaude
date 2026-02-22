@@ -5,16 +5,21 @@ const KIT_API_URL = 'https://api.convertkit.com/v3';
 
 export async function POST(req: NextRequest) {
   try {
+    console.log('Subscribe route called');
     const { email, firstName, tagId } = await req.json();
+    console.log('Received:', { email, firstName, tagId });
 
     if (!email || !tagId) {
+      console.error('Missing email or tagId');
       return NextResponse.json({ error: 'Email and tagId are required' }, { status: 400 });
     }
 
     if (!KIT_API_KEY) {
-      console.error('KIT_API_KEY is not set');
-      return NextResponse.json({ error: 'Server configuration error' }, { status: 500 });
+      console.error('KIT_API_KEY is not set in environment');
+      return NextResponse.json({ error: 'Server configuration error - API key missing' }, { status: 500 });
     }
+
+    console.log('Using KIT_API_KEY:', KIT_API_KEY.substring(0, 8) + '...');
 
     // Subscribe to tag (this also creates the subscriber if they don't exist)
     const tagRes = await fetch(`${KIT_API_URL}/tags/${tagId}/subscribe`, {

@@ -34,7 +34,12 @@ export default function EmailCapture({
         body: JSON.stringify({ email, firstName, tagId }),
       });
 
-      if (!res.ok) throw new Error('Failed to subscribe');
+      const data = await res.json();
+
+      if (!res.ok) {
+        console.error('API error:', data);
+        throw new Error(data.error || 'Failed to subscribe');
+      }
 
       setStatus('success');
       setEmail('');
@@ -45,7 +50,7 @@ export default function EmailCapture({
         router.push('/guide');
       }, 1000);
     } catch (err) {
-      console.error(err);
+      console.error('Subscription error:', err);
       setError('Something went wrong. Please try again.');
       setStatus('error');
     }
