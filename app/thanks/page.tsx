@@ -2,9 +2,31 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: 'Thank You — Switch to Claude',
   description: 'Thanks for joining! Check your email for the migration guide.',
+  alternates: {
+    canonical: 'https://switchtoclaude.com/thanks',
+  },
+  openGraph: {
+    title: 'Thank You — Switch to Claude',
+    description: 'Thanks for joining! Check your email for the migration guide.',
+    url: 'https://switchtoclaude.com/thanks',
+    type: 'website',
+    images: [{
+      url: '/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'Thank You — Switch to Claude',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Thank You — Switch to Claude',
+    description: 'Thanks for joining! Check your email for the migration guide.',
+  },
 };
 
 export default function ThanksPage() {

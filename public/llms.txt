@@ -1,0 +1,56 @@
+# Switch to Claude - Free Migration Guide
+
+> A free guide and resource helping people migrate from ChatGPT to Claude without losing their trained context and workflows. Part of the #QuitGPT movement with 1.2M+ participants.
+
+## Site
+
+- Owner: Nicole Patten, Elevate Online
+- Domain: https://switchtoclaude.com
+- Alternate Domain: https://switchtoclaude.ai
+- Contact: Via https://elevateonline.com
+- LinkedIn: https://linkedin.com/in/npatten
+
+## Pages
+
+- Home: https://switchtoclaude.com
+  Free migration guide with email capture. Explains why 1.2M+ people are switching from ChatGPT to Claude following OpenAI's $25M donation to Trump's Super PAC. Includes social proof from the #QuitGPT movement, value propositions, FAQ, and email capture for the free guide.
+
+- Migration Guide: https://switchtoclaude.com/guide
+  Complete step-by-step guide with copy-paste prompts to extract ChatGPT context and rebuild in Claude. Includes: The Migration Prompt (extracts everything ChatGPT knows about you), The Instructions Generator (converts ChatGPT context into Claude Project instructions), comparison of Claude vs ChatGPT features, and explanation of Claude Projects, Skills, and MCP integrations.
+
+- Thank You: https://switchtoclaude.com/thanks
+  Post-signup confirmation page with direct link to guide and teaser for the full Claude for Everyone course.
+
+## Services & Offerings
+
+- Free ChatGPT to Claude migration guide
+- Two copy-paste prompts:
+  1. Migration Prompt - Extract all ChatGPT context about you (writing style, preferences, workflows)
+  2. Instructions Generator - Convert ChatGPT context into Claude Project instructions
+- Email course with bonus skill templates and prompt files
+- Migration process takes approximately 15 minutes
+- Works with free Claude accounts (Claude Pro recommended for Projects feature)
+
+## Why People Are Switching
+
+1. Values-driven decision: OpenAI's president donated $25M to Trump's Super PAC, CEO gave $1M to Inaugural Fund, ICE uses GPT-4 for resume screening
+2. Quality concerns: GPT-5.2 outputs getting shorter and less thorough
+3. Better tools: Claude Projects for persistent context, Skills for automation, MCP integrations for workflow connection
+4. Part of grassroots #QuitGPT boycott movement with 1.2M+ participants
+
+## Related Resources
+
+- Full Course: https://claudeforeveryone.com (Comprehensive course on Skills, MCP integrations, building AI operating system with Claude)
+- Main Business: https://elevateonline.com (Nicole Patten's consulting business, runs entirely on Claude)
+- QuitGPT Movement: https://quitgpt.org (Grassroots boycott of OpenAI products)
+
+## Creator
+
+Nicole Patten - Ex-Google engineer (7 years), runs consulting business entirely using Claude. Helps teams build AI-powered workflows through Elevate Online and Claude for Everyone course.
+
+## Technical Details
+
+- Built with: Next.js 15, React 19, TypeScript, Tailwind CSS
+- Hosted on: Vercel
+- Email capture via: ConvertKit (tag ID: 16393383, source: "switchtoclaude")
+- Three-page site optimized for conversion and content delivery

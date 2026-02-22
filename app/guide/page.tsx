@@ -6,9 +6,31 @@ import GuideContent from '@/components/GuideContent';
 import EmailCaptureConvertKit from '@/components/EmailCaptureConvertKit';
 import Link from 'next/link';
 
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: 'Migration Guide — Switch from ChatGPT to Claude',
   description: 'Step-by-step guide to migrate from ChatGPT to Claude with exact prompts to preserve your context.',
+  alternates: {
+    canonical: 'https://switchtoclaude.com/guide',
+  },
+  openGraph: {
+    title: 'Migration Guide — Switch from ChatGPT to Claude',
+    description: 'Step-by-step guide to migrate from ChatGPT to Claude with exact prompts to preserve your context.',
+    url: 'https://switchtoclaude.com/guide',
+    type: 'article',
+    images: [{
+      url: '/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'Migration Guide — Switch from ChatGPT to Claude',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Migration Guide — Switch from ChatGPT to Claude',
+    description: 'Step-by-step guide to migrate from ChatGPT to Claude with exact prompts to preserve your context.',
+  },
 };
 
 export default async function GuidePage() {
