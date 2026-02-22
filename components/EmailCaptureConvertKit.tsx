@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface EmailCaptureProps {
   tagId: string;
@@ -15,12 +16,13 @@ export default function EmailCapture({
   placeholder = 'Enter your email',
   showName = false,
 }: EmailCaptureProps) {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setStatus('loading');
@@ -37,6 +39,11 @@ export default function EmailCapture({
       setStatus('success');
       setEmail('');
       setFirstName('');
+
+      // Redirect to guide page after successful submission
+      setTimeout(() => {
+        router.push('/guide');
+      }, 1000);
     } catch (err) {
       console.error(err);
       setError('Something went wrong. Please try again.');
@@ -46,8 +53,8 @@ export default function EmailCapture({
 
   if (status === 'success') {
     return (
-      <div className="w-full max-w-md mx-auto rounded-lg bg-purple-50 p-4 text-purple-800 text-sm text-center">
-        ✓ You&apos;re in! Check your inbox for a confirmation email.
+      <div className="w-full max-w-md mx-auto rounded-lg bg-green-50 p-4 text-green-800 text-sm text-center">
+        ✓ You&apos;re in! Redirecting to the guide...
       </div>
     );
   }
