@@ -6,51 +6,45 @@ You don't need to lose your ChatGPT training. This guide shows you how to extrac
 
 ## Step 1: Export Your ChatGPT Context
 
-ChatGPT has learned your writing style, preferences, and workflows from months of conversations. Let's extract all of that.
+ChatGPT has learned your writing style, preferences, and workflows from your conversations. Let's extract all of that.
 
 ### The Migration Prompt
 
 Copy and paste this prompt into ChatGPT:
-
 ```
 I'm migrating from ChatGPT to Claude and want to preserve everything you know about me. Please generate a comprehensive profile that includes:
 
 1. My writing style and tone preferences
 2. My professional context and role
-3. Common tasks I ask you to help with
-4. Any specific instructions or preferences I've given you
+3. Common tasks and topics I ask you to help with,
+   including any recurring interests or subjects
+4. Any specific instructions, preferences, or opinions
+   I've expressed — including strong likes, dislikes,
+   or points of view on topics we've discussed
 5. Projects or ongoing work we've discussed
 6. Tools, frameworks, or technologies I frequently work with
 
 Format this as a detailed profile that another AI could use to provide the same level of personalized assistance.
 ```
 
-Save ChatGPT's response. This is your migration document.
+Save ChatGPT's response — you'll paste it into Claude in the next step.
 
 ---
 
-## Step 2: Transform It for Claude
+## Step 2: Build Your Claude Project Instructions
 
-Claude Projects use "Custom Instructions" to maintain context. Let's convert your ChatGPT profile into Claude-optimized instructions.
+Now we'll take your ChatGPT profile and turn it into Claude Project Instructions — but instead of a one-shot reformat, Claude will ask you a few clarifying questions first. This produces instructions that are actually personalized to you, not just a generic reformat of whatever ChatGPT had on file.
 
 ### The Instructions Generator Prompt
 
-Take the output from Step 1 and paste it into a new Claude conversation along with this prompt:
-
+Open a new Claude conversation and paste your ChatGPT output along with this prompt:
 ```
-You're helping me set up Claude Project instructions. I'm migrating from ChatGPT. Here's my ChatGPT profile:
+I'm setting up a Claude Project and I've pasted my ChatGPT profile below. Before generating my instructions, ask me up to 5 targeted questions to fill in any gaps — focus on my profession, primary use cases, and tone preferences. After I answer, generate a complete Claude Project instruction set as a markdown artifact, formatted and ready to paste directly into a Claude Project's Custom Instructions field.
 
-[PASTE YOUR CHATGPT EXPORT HERE]
-
-Please reformat this into optimized Claude Project instructions that:
-- Start with my role and professional context
-- Include my communication preferences and tone
-- List common tasks and workflows
-- Specify any tools, frameworks, or domains I work in
-- Are clear, structured, and actionable
-
-Format it ready to paste directly into a Claude Project's Custom Instructions field.
+[PASTE YOUR CHATGPT OUTPUT HERE]
 ```
+
+Answer Claude's questions, then copy the instruction set it generates.
 
 ---
 
@@ -72,9 +66,9 @@ Start a conversation in your new Claude Project. Try these tests:
 
 - Ask Claude to write something in your style
 - Request help with a typical task
-- Reference a project or context from your ChatGPT history
+- Ask for advice on something you'd normally take to ChatGPT
 
-Claude should respond with the same level of personalization you had with ChatGPT — often better, because Projects maintain context across all conversations.
+Claude should respond with immediate personalization — often better than ChatGPT, because Projects maintain consistent context across every conversation.
 
 ---
 
@@ -84,11 +78,11 @@ Now that you've migrated, here's what makes Claude better for real work:
 
 ### Projects = Persistent Context
 
-Unlike ChatGPT's memory (which is inconsistent), Claude Projects maintain perfect context across all conversations. Add documents, set instructions once, and every chat in that Project has full context.
+Unlike ChatGPT's memory (which is inconsistent), Claude Projects maintain context across all conversations. Set instructions once, and every chat in that Project has full context.
 
 ### Skills = Automation
 
-Claude Skills let you create reusable prompts with variables. Think of them as custom commands for your most common tasks.
+Claude Skills let you create reusable prompts for your most common tasks. Think of them as custom commands you build once and reuse forever.
 
 ### MCP Integrations
 
@@ -98,7 +92,7 @@ Model Context Protocol connects Claude to your actual tools: GitHub, file system
 
 | Feature | ChatGPT | Claude |
 |---------|---------|--------|
-| Persistent context | Memory (unreliable) | Projects (perfect) |
+| Persistent context | Memory (unreliable) | Projects (consistent) |
 | Multi-document context | Limited | Unlimited in Projects |
 | Custom workflows | Custom GPTs (siloed) | Skills (portable) |
 | Tool integrations | Plugins (deprecated) | MCP (growing ecosystem) |
@@ -110,14 +104,18 @@ Model Context Protocol connects Claude to your actual tools: GitHub, file system
 
 ### Basic Setup (you're done!)
 - ✓ Migrated your ChatGPT context
+- ✓ Built personalized Project Instructions
 - ✓ Set up your first Claude Project
 - ✓ Tested personalization
 
 ### Go Deeper
-Want to build a complete AI operating system with Claude? The full course covers:
+
+Your Project Instructions are a starting point. In the next video, we'll sharpen them using the Project Instructions Generator — a structured approach to building instructions that actually reflect how you work.
+
+Want to go further? The full course covers:
 - Advanced Project architectures
 - Building and using Skills
-- Setting up MCP integrations
+- MCP integrations
 - Automating workflows with Claude + n8n
 - Real-world case studies
 
@@ -127,13 +125,11 @@ Want to build a complete AI operating system with Claude? The full course covers
 
 ## Checklist
 
-Use this to track your migration:
-
 - [ ] Ran the Migration Prompt in ChatGPT
-- [ ] Saved my ChatGPT profile export
-- [ ] Transformed it using the Instructions Generator
+- [ ] Pasted output into Claude with the Instructions Generator Prompt
+- [ ] Answered Claude's clarifying questions
 - [ ] Created my first Claude Project
-- [ ] Pasted custom instructions
+- [ ] Pasted custom instructions into Project settings
 - [ ] Tested personalization
 - [ ] Explored Projects, Skills, and MCP
 - [ ] Deleted my ChatGPT account (optional but liberating)
@@ -142,6 +138,6 @@ Use this to track your migration:
 
 ## Questions?
 
-Join 700,000+ people making the switch. Share your experience with #QuitGPT on social media.
+Share your experience with #QuitGPT and #switchtoclaude on social media.
 
-Want ongoing updates, templates, and workflows? Join the email list below.
+Want ongoing updates, templates, and workflows? Join the email list at switchtoclaude.com
