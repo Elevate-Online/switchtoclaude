@@ -12,7 +12,13 @@
       "Bash(test:*)",
       "Bash(if [ -f .env.local ])",
       "Bash(then grep -q \"KIT_API_KEY\" .env.local)",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(curl:*)",
+      "Bash(npx:*)",
+      "Bash(npm install:*)",
+      "Bash(node generate-og-image.js:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
