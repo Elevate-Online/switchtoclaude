@@ -1,4 +1,5 @@
 import EmailCaptureConvertKit from '@/components/EmailCaptureConvertKit';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,6 +7,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <Header />
+
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-6 py-16 md:py-24">
         <div className="text-center space-y-8">
@@ -193,6 +196,84 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Free vs Full Course Comparison */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-200">
+        <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8 md:p-12 shadow-sm">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">
+            Free Guide vs. Full Course
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Free Guide */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-2xl">📋</div>
+                <h3 className="text-xl font-bold text-gray-900">Free Guide</h3>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Migration prompts to extract your ChatGPT context</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Basic Claude Project setup</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>15-minute migration walkthrough</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Get started today</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Full Course */}
+            <div className="space-y-4 bg-white border-2 border-claude-orange rounded-lg p-6 relative">
+              <div className="absolute -top-3 right-6 bg-claude-orange text-white px-3 py-1 rounded-full text-xs font-bold">
+                GO DEEPER
+              </div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-2xl">🚀</div>
+                <h3 className="text-xl font-bold text-gray-900">Claude for Everyone</h3>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Everything in the free guide</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Build Skills for automated workflows</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Connect Claude to your tools with MCP</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Complete AI operating system architecture</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-claude-orange mt-1">✓</span>
+                  <span>Real-world case studies & templates</span>
+                </li>
+              </ul>
+              <div className="pt-4">
+                <Link
+                  href="https://claudeforeveryone.com"
+                  target="_blank"
+                  className="block w-full text-center px-6 py-3 bg-claude-orange hover:bg-claude-coral text-white rounded-lg font-medium transition-colors shadow-sm"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-200 bg-gray-50">
         <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center text-gray-900">
@@ -223,6 +304,16 @@ export default function Home() {
               You keep your ChatGPT account. This guide helps you try Claude with your full context so you can compare them fairly. No commitment required.
             </p>
           </div>
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 className="text-lg font-bold mb-2 text-gray-900">Is there more beyond this free guide?</h3>
+            <p className="text-gray-700">
+              Yes! This guide gets you migrated in 15 minutes. The full{' '}
+              <Link href="https://claudeforeveryone.com" target="_blank" className="text-claude-orange hover:underline font-semibold">
+                Claude for Everyone course
+              </Link>{' '}
+              teaches you Skills for automation, MCP integrations to connect Claude to your tools, and how to build a complete AI operating system that runs your workflows.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -236,17 +327,29 @@ export default function Home() {
             <p className="text-gray-700 mb-4">
               Built by <span className="font-semibold text-gray-900">Nicole Patten</span>. Ex-Google engineer (7 years). Runs her entire consulting business using Claude.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 mb-6">
               Nicole helps teams build AI-powered workflows through{' '}
               <Link href="https://elevateonline.com" target="_blank" className="text-claude-orange hover:underline">
                 Elevate Online
-              </Link>{' '}
-              and the full{' '}
-              <Link href="https://claudeforeveryone.com" target="_blank" className="text-claude-orange hover:underline">
-                Claude for Everyone course
               </Link>
               .
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-gray-200">
+              <Link
+                href="https://claudeforeveryone.com"
+                target="_blank"
+                className="flex-1 text-center px-6 py-3 bg-claude-orange hover:bg-claude-coral text-white rounded-lg font-medium transition-colors shadow-sm"
+              >
+                Check Out the Full Course →
+              </Link>
+              <Link
+                href="https://linkedin.com/in/npatten"
+                target="_blank"
+                className="flex-1 text-center px-6 py-3 border-2 border-gray-300 hover:border-claude-orange text-gray-700 hover:text-claude-orange rounded-lg font-medium transition-colors"
+              >
+                Connect on LinkedIn
+              </Link>
+            </div>
           </div>
         </div>
       </section>
