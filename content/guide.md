@@ -24,6 +24,8 @@ I'm migrating from ChatGPT to Claude and want to preserve everything you know ab
 5. Projects or ongoing work we've discussed
 6. Tools, frameworks, or technologies I frequently work with
 
+Include any recurring phrases, mental models, or frameworks I reference frequently.
+
 Format this as a detailed profile that another AI could use to provide the same level of personalized assistance.
 ```
 
@@ -31,32 +33,52 @@ Save ChatGPT's response — you'll paste it into Claude in the next step.
 
 ---
 
-## Step 2: Build Your Claude Project Instructions
+## Step 2: Create Your Claude Project
+
+First, let's create the Project where you'll work with Claude.
+
+1. Go to [claude.ai](https://claude.ai)
+2. Click "Projects" in the sidebar
+3. Click "Create Project"
+4. Name it something like "Personal AI Assistant" or "Work Context"
+5. Don't add instructions yet — we'll generate those in the next step
+
+**Pro tip:** You can have multiple Projects for different contexts (work, creative writing, coding, etc.)
+
+---
+
+## Step 3: Build Your Project Instructions
 
 Now we'll take your ChatGPT profile and turn it into Claude Project Instructions — but instead of a one-shot reformat, Claude will ask you a few clarifying questions first. This produces instructions that are actually personalized to you, not just a generic reformat of whatever ChatGPT had on file.
 
 ### The Instructions Generator Prompt
 
-Open a new Claude conversation and paste your ChatGPT output along with this prompt:
+**Open a conversation IN your new Project** (the one you just created), then paste your ChatGPT output along with this prompt:
+
 ```
-I'm setting up a Claude Project and I've pasted my ChatGPT profile below. Before generating my instructions, ask me up to 5 targeted questions to fill in any gaps — focus on my profession, primary use cases, and tone preferences. After I answer, generate a complete Claude Project instruction set as a markdown artifact, formatted and ready to paste directly into a Claude Project's Custom Instructions field.
+I'm setting up this Claude Project and I've pasted my ChatGPT profile below.
+
+Before generating my instructions, ask me up to 5 targeted questions to fill in any gaps — focus on:
+- My profession and primary use cases
+- Tone preferences (formal, casual, technical depth)
+- Any important context ChatGPT missed
+
+After I answer, generate a complete Claude Project instruction set as a markdown artifact, formatted and ready to paste directly into this Project's Custom Instructions field.
 
 [PASTE YOUR CHATGPT OUTPUT HERE]
 ```
 
 Answer Claude's questions, then copy the instruction set it generates.
 
----
+### Add Instructions to Your Project
 
-## Step 3: Create Your Claude Project
+1. Click the Project name at the top of the conversation
+2. Click "Project settings" or the gear icon
+3. Find the "Custom Instructions" field
+4. Paste the instruction set Claude generated
+5. Save
 
-1. Go to [claude.ai](https://claude.ai)
-2. Click "Projects" in the sidebar
-3. Create a new Project (name it something like "Personal AI Assistant" or "Work Context")
-4. Paste your generated instructions into the "Custom Instructions" field
-5. Add any relevant documents (style guides, company docs, code samples)
-
-**Pro tip:** You can have multiple Projects for different contexts (work, creative writing, coding, etc.)
+You can also add any relevant documents to the Project (style guides, company docs, code samples).
 
 ---
 
@@ -103,9 +125,10 @@ Model Context Protocol connects Claude to your actual tools: GitHub, file system
 ## Step 6: Next Steps
 
 ### Basic Setup (you're done!)
-- ✓ Migrated your ChatGPT context
-- ✓ Built personalized Project Instructions
-- ✓ Set up your first Claude Project
+- ✓ Exported your ChatGPT context
+- ✓ Created your first Claude Project
+- ✓ Generated personalized Project Instructions
+- ✓ Added instructions to your Project
 - ✓ Tested personalization
 
 ### Go Deeper
@@ -126,12 +149,15 @@ Want to go further? The full course covers:
 ## Checklist
 
 - [ ] Ran the Migration Prompt in ChatGPT
-- [ ] Pasted output into Claude with the Instructions Generator Prompt
-- [ ] Answered Claude's clarifying questions
+- [ ] Saved the ChatGPT output
 - [ ] Created my first Claude Project
+- [ ] Opened a conversation in the new Project
+- [ ] Pasted the Instructions Generator Prompt with my ChatGPT output
+- [ ] Answered Claude's clarifying questions
+- [ ] Copied the generated instruction set
 - [ ] Pasted custom instructions into Project settings
-- [ ] Tested personalization
-- [ ] Explored Projects, Skills, and MCP
+- [ ] Tested personalization in the Project
+- [ ] Explored Projects, Skills, and MCP features
 - [ ] Deleted my ChatGPT account (optional but liberating)
 
 ---
