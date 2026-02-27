@@ -274,6 +274,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Walkthrough */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-200">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">
+          Watch the Walkthrough
+        </h2>
+        <div className="relative w-full overflow-hidden rounded-xl shadow-lg" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/dn5dVAznhsE"
+            title="How to Switch from ChatGPT to Claude"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-200 bg-gray-50">
         <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center text-gray-900">
