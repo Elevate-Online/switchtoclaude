@@ -12,6 +12,9 @@ export default function Footer() {
             <Link href="https://elevateonline.com" target="_blank" className="hover:text-claude-orange transition-colors">
               Elevate Online
             </Link>
+            <Link href="https://njpatten.com" target="_blank" className="hover:text-claude-orange transition-colors">
+              Nicole Patten
+            </Link>
             <Link href="https://linkedin.com/in/npatten" target="_blank" className="hover:text-claude-orange transition-colors">
               LinkedIn
             </Link>

@@ -10,13 +10,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Migration Guide — Switch from ChatGPT to Claude',
-  description: 'Step-by-step guide to migrate from ChatGPT to Claude with exact prompts to preserve your context.',
+  description: 'Step-by-step guide to switch from ChatGPT to Claude. Import your memory in 60 seconds, build project instructions in 5 minutes. Free guide + generator.',
   alternates: {
     canonical: 'https://switchtoclaude.com/guide',
   },
   openGraph: {
     title: 'Migration Guide — Switch from ChatGPT to Claude',
-    description: 'Step-by-step guide to migrate from ChatGPT to Claude with exact prompts to preserve your context.',
+    description: 'Step-by-step guide to switch from ChatGPT to Claude. Import your memory in 60 seconds, build project instructions in 5 minutes. Free guide + generator.',
     url: 'https://switchtoclaude.com/guide',
     type: 'article',
     images: [{
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Migration Guide — Switch from ChatGPT to Claude',
-    description: 'Step-by-step guide to migrate from ChatGPT to Claude with exact prompts to preserve your context.',
+    description: 'Step-by-step guide to switch from ChatGPT to Claude. Import your memory in 60 seconds, build project instructions in 5 minutes. Free guide + generator.',
   },
 };
 
@@ -43,9 +43,14 @@ export default async function GuidePage() {
 
       <article className="max-w-4xl mx-auto px-6 py-12">
         <div className="mb-8 pb-6 border-b border-gray-200">
-          <p className="text-sm text-gray-600">
-            <span className="font-medium">Reading time:</span> 12 minutes
-          </p>
+          <div className="flex items-center gap-3">
+            <p className="text-sm text-gray-600">
+              <span className="font-medium">Reading time:</span> 8 minutes
+            </p>
+            <span className="inline-block px-2.5 py-0.5 bg-claude-orange/10 text-claude-orange text-xs font-semibold rounded-full">
+              Updated March 2026
+            </span>
+          </div>
         </div>
 
         <GuideContent content={content} />

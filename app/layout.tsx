@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import LaunchBanner from "@/components/LaunchBanner";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Switch from ChatGPT to Claude — Free Migration Guide",
-  description: "Extract what ChatGPT knows about you and rebuild it in Claude. Free guide with exact prompts. Join 700,000+ people making the switch.",
+  description: "Switch from ChatGPT to Claude in 15 minutes. Import your memory with Anthropic's official tool, then build project instructions with our free generator. Join 1M+ people making the switch.",
   metadataBase: new URL('https://switchtoclaude.com'),
   openGraph: {
     title: "Switch from ChatGPT to Claude — Free Migration Guide",
-    description: "Extract what ChatGPT knows about you and rebuild it in Claude. Free guide with exact prompts. Join 700,000+ people making the switch.",
+    description: "Switch from ChatGPT to Claude in 15 minutes. Import your memory with Anthropic's official tool, then build project instructions with our free generator. Join 1M+ people making the switch.",
     url: 'https://switchtoclaude.com',
     siteName: 'Switch to Claude',
     locale: 'en_US',
@@ -48,6 +49,7 @@ export default function RootLayout({
             gtag('config', 'G-D071F3GT0J');
           `}
         </Script>
+        <LaunchBanner />
         {children}
       </body>
     </html>

@@ -18,7 +18,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-600 text-balance max-w-3xl mx-auto">
             Your ChatGPT training, workflows, and context — moved to Claude in 15 minutes.
           </p>
-          <div className="pt-4">
+          <div id="waitlist" className="pt-4">
             <EmailCaptureConvertKit tagId="16393383" buttonText="Get Free Guide" />
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm">
@@ -138,18 +138,22 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">
             Here&apos;s What You&apos;ll Get
           </h2>
-          <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm">
-            <h3 className="text-lg font-bold mb-4 text-gray-900">The Migration Prompt (Preview)</h3>
-            <div className="bg-gray-50 border border-gray-200 rounded p-4 text-sm font-mono text-gray-700 overflow-x-auto">
-              <p className="mb-2">I&apos;m migrating from ChatGPT to Claude and want to preserve everything you know about me.</p>
-              <p className="mb-2">Please generate a comprehensive profile that includes:</p>
-              <p className="mb-1">1. My writing style and tone preferences</p>
-              <p className="mb-1">2. My professional context and role</p>
-              <p className="text-gray-500">... and 4 more steps</p>
+          <h3 className="text-lg font-bold mb-6 text-gray-900 text-center">The Complete Setup (Preview)</h3>
+          <div className="space-y-4">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-claude-orange text-white flex items-center justify-center font-bold text-lg">1</div>
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">Import memory</h4>
+                <p className="text-gray-700 text-sm"><Link href="https://claude.com/import-memory" target="_blank" className="text-claude-orange hover:underline">claude.com/import-memory</Link> — 60 seconds, Anthropic&apos;s official tool</p>
+              </div>
             </div>
-            <p className="mt-4 text-gray-600 text-sm">
-              The full guide includes two complete copy-paste prompts plus step-by-step instructions.
-            </p>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-claude-orange text-white flex items-center justify-center font-bold text-lg">2</div>
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">Build project instructions</h4>
+                <p className="text-gray-700 text-sm"><Link href="https://claudeforeveryone.com/project-instructions" target="_blank" className="text-claude-orange hover:underline">claudeforeveryone.com/project-instructions</Link> — 5 minutes, free generator</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -162,11 +166,11 @@ export default function Home() {
         <div className="space-y-6">
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex items-start gap-4">
-              <div className="text-3xl">📋</div>
+              <div className="text-3xl">🧠</div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">The Migration Prompt</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Import Your ChatGPT Memory (Official Tool)</h3>
                 <p className="text-gray-700">
-                  Extract everything ChatGPT knows about you — your writing style, preferences, context, and workflows — in one comprehensive export.
+                  Anthropic just launched a one-copy-paste memory import tool. Bring everything ChatGPT knows about you into Claude in 60 seconds.
                 </p>
               </div>
             </div>
@@ -175,9 +179,9 @@ export default function Home() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">⚙️</div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">The Instructions Generator</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Build Your Project Instructions</h3>
                 <p className="text-gray-700">
-                  Turn your ChatGPT context into perfectly formatted Claude Project instructions that work even better than before.
+                  Memory tells Claude who you are. Instructions tell it how to work with you — your tone, focus, challenge level. Use the free generator to build yours in 5 minutes.
                 </p>
               </div>
             </div>
@@ -188,7 +192,7 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-2 text-gray-900">What Claude Can Do That ChatGPT Can&apos;t</h3>
                 <p className="text-gray-700">
-                  Learn about Projects for persistent context, Skills for automation, and MCP integrations that connect Claude to your entire workflow.
+                  Projects, Skills, and MCP integrations — the architecture that makes Claude actually useful for real work, not just chat.
                 </p>
               </div>
             </div>
@@ -341,7 +345,7 @@ export default function Home() {
           </h2>
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm">
             <p className="text-gray-700 mb-4">
-              Built by <span className="font-semibold text-gray-900">Nicole Patten</span>. Ex-Google engineer (7 years). Runs her entire consulting business using Claude.
+              Built by <Link href="https://njpatten.com" target="_blank" className="font-semibold text-gray-900 hover:text-claude-orange transition-colors">Nicole Patten</Link>. Ex-Google engineer (7 years). Runs her entire consulting business using Claude.
             </p>
             <p className="text-gray-700 mb-6">
               Nicole helps teams build AI-powered workflows through{' '}
@@ -372,7 +376,7 @@ export default function Home() {
 
       {/* Final CTA */}
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-200 bg-gray-50">
-        <div className="text-center space-y-6">
+        <div id="waitlist-bottom" className="text-center space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             Ready to Make the Switch?
           </h2>
