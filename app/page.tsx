@@ -151,7 +151,7 @@ export default function Home() {
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-claude-orange text-white flex items-center justify-center font-bold text-lg">2</div>
               <div>
                 <h4 className="font-bold text-gray-900 mb-1">Build project instructions</h4>
-                <p className="text-gray-700 text-sm"><Link href="https://claudeforeveryone.com/project-instructions" target="_blank" className="text-claude-orange hover:underline">claudeforeveryone.com/project-instructions</Link> — 5 minutes, free generator</p>
+                <p className="text-gray-700 text-sm"><Link href="https://claudeforeveryone.com/projectinstructions" target="_blank" className="text-claude-orange hover:underline">claudeforeveryone.com/projectinstructions</Link> — 5 minutes, free generator</p>
               </div>
             </div>
           </div>

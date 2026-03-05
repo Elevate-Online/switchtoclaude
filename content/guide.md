@@ -98,7 +98,7 @@ Global memory tells Claude who you are. Project instructions tell Claude how to 
 
 ### Option A: Use the Free Generator (Recommended)
 
-**The fastest way:** Use the free generator at [claudeforeveryone.com/project-instructions](https://claudeforeveryone.com/project-instructions).
+**The fastest way:** Use the free generator at [claudeforeveryone.com/projectinstructions](https://claudeforeveryone.com/projectinstructions).
 
 It asks you a few questions about your role, your goals, and how you like to work — then generates a complete instruction set you can paste directly into your Project settings.
 
@@ -193,7 +193,7 @@ Model Context Protocol connects Claude to your actual tools: Google Drive, Gmail
 - [ ] Reviewed global memory — confirmed it covers the big picture
 - [ ] Ran the migration prompt in each important ChatGPT thread/project
 - [ ] Created a Claude Project for each context you migrated
-- [ ] Generated Project Instructions ([generator](https://claudeforeveryone.com/project-instructions) or prompt) for each project
+- [ ] Generated Project Instructions ([generator](https://claudeforeveryone.com/projectinstructions) or prompt) for each project
 - [ ] Pasted instructions into each Project's settings
 - [ ] Tested project chat vs. regular chat — noticed the difference
 - [ ] Started training project memory with "remember that..." prompts

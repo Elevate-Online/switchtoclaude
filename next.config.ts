@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/project-instructions',
-        destination: 'https://claudeforeveryone.com/project-instructions',
+        source: '/projectinstructions',
+        destination: 'https://claudeforeveryone.com/projectinstructions',
         permanent: false,
       },
     ];
