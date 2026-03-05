@@ -37,6 +37,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Updated Guide Note */}
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="bg-claude-orange/10 border border-claude-orange/30 rounded-lg p-5 text-center">
+          <p className="text-gray-800 text-sm md:text-base">
+            <span className="font-semibold">Updated for March 2026:</span> Anthropic launched an official{' '}
+            <Link href="https://claude.com/import-memory" target="_blank" className="text-claude-orange hover:underline font-medium">
+              memory import tool
+            </Link>
+            {' '}— but it only imports to your <em>global</em> memory. Our guide covers the extra steps to set up your individual projects correctly.
+          </p>
+        </div>
+      </section>
+
       {/* #QuitGPT Movement */}
       <section className="bg-gray-900 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-6">
