@@ -30,7 +30,8 @@ export default function LaunchBanner() {
         </p>
         <div className="flex items-center gap-3 flex-shrink-0">
           <Link
-            href="/#waitlist"
+            href="https://claudeforeveryone.com/#offer"
+            target="_blank"
             className="inline-block px-4 py-1.5 bg-white text-claude-orange rounded-lg text-sm font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap"
           >
             Join Waitlist →
