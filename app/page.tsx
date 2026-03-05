@@ -163,6 +163,13 @@ export default function Home() {
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex items-start gap-4">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-claude-orange text-white flex items-center justify-center font-bold text-lg">2</div>
               <div>
+                <h4 className="font-bold text-gray-900 mb-1">Migrate your projects</h4>
+                <p className="text-gray-700 text-sm"><Link href="/guide" className="text-claude-orange hover:underline">Read the full guide</Link> — copy-paste prompts to move each ChatGPT thread into its own Claude Project</p>
+              </div>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-claude-orange text-white flex items-center justify-center font-bold text-lg">3</div>
+              <div>
                 <h4 className="font-bold text-gray-900 mb-1">Build project instructions</h4>
                 <p className="text-gray-700 text-sm"><Link href="https://claudeforeveryone.com/projectinstructions" target="_blank" className="text-claude-orange hover:underline">claudeforeveryone.com/projectinstructions</Link> — 5 minutes, free generator</p>
               </div>
