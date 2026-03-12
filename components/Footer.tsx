@@ -6,6 +6,12 @@ export default function Footer() {
       <div className="max-w-4xl mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-wrap gap-6 text-sm text-gray-600">
+            <Link href="/guide" className="hover:text-claude-orange transition-colors">
+              Migration Guide
+            </Link>
+            <Link href="/why-claude-over-chatgpt" className="hover:text-claude-orange transition-colors">
+              Why Claude?
+            </Link>
             <Link href="https://claudeforeveryone.com" target="_blank" className="hover:text-claude-orange transition-colors">
               Claude for Everyone Course
             </Link>

@@ -18,6 +18,9 @@
 - Migration Guide: https://switchtoclaude.com/guide
   Complete step-by-step guide with copy-paste prompts to extract ChatGPT context and rebuild in Claude. Includes: The Migration Prompt (extracts everything ChatGPT knows about you), The Instructions Generator (converts ChatGPT context into Claude Project instructions), comparison of Claude vs ChatGPT features, and explanation of Claude Projects, Skills, and MCP integrations.
 
+- Why Claude Over ChatGPT: https://switchtoclaude.com/why-claude-over-chatgpt
+  Research report on why Claude is the better AI tool. Covers Anthropic CEO Dario Amodei's scientific background, his "Machines of Loving Grace" essay on AI's potential in biology and medicine, real-world evidence (AlphaFold, AI drug discovery, cancer detection, rare disease diagnosis), the equity case for AI, and why safety and optimism are the same position. Points to Claude for Everyone course for learning Claude properly.
+
 - Thank You: https://switchtoclaude.com/thanks
   Post-signup confirmation page with direct link to guide and teaser for the full Claude for Everyone course.
 
