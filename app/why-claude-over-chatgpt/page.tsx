@@ -103,7 +103,7 @@ export default function WhyClaudePage() {
         </nav>
 
         {/* Content */}
-        <div className="prose prose-lg prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-claude-orange prose-a:no-underline hover:prose-a:underline prose-blockquote:border-claude-orange prose-blockquote:bg-gray-50 prose-blockquote:py-1 prose-blockquote:px-6 prose-blockquote:rounded-r-lg">
+        <div className="prose prose-lg prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-claude-orange prose-a:no-underline hover:prose-a:underline prose-blockquote:border-claude-orange prose-blockquote:bg-gray-50 prose-blockquote:py-1 prose-blockquote:px-6 prose-blockquote:rounded-r-lg [&>section]:pt-10 [&>section]:pb-10 [&>section]:border-b [&>section]:border-gray-200 [&>section:last-child]:border-b-0">
           {/* Who Is Dario Amodei */}
           <section id="who-is-dario">
             <h2>Who Is Dario Amodei?</h2>
@@ -260,7 +260,7 @@ export default function WhyClaudePage() {
               evidence.
             </p>
 
-            <h3>AlphaFold: Proof of Concept at Nobel Scale</h3>
+            <h3 className="mt-10">AlphaFold: Proof of Concept at Nobel Scale</h3>
             <p>
               In 2020, Google DeepMind&apos;s AlphaFold 2 solved what was
               considered one of the hardest problems in biology: predicting the
@@ -285,7 +285,7 @@ export default function WhyClaudePage() {
               </li>
             </ul>
 
-            <h3>AI Drug Discovery: From Promise to Results</h3>
+            <h3 className="mt-10">AI Drug Discovery: From Promise to Results</h3>
             <p>
               Insilico Medicine&apos;s rentosertib — a drug designed{' '}
               <strong>entirely by AI</strong> — progressed from target
@@ -303,7 +303,7 @@ export default function WhyClaudePage() {
               demonstrated some form of timeline acceleration.
             </p>
 
-            <h3>AI Cancer Detection</h3>
+            <h3 className="mt-10">AI Cancer Detection</h3>
             <p>
               The FDA has now cleared nearly 900 AI-enabled medical devices.
               Results include:
@@ -327,7 +327,7 @@ export default function WhyClaudePage() {
               </li>
             </ul>
 
-            <h3>Rare Disease: Ending the Diagnostic Odyssey</h3>
+            <h3 className="mt-10">Rare Disease: Ending the Diagnostic Odyssey</h3>
             <p>
               350 million+ people worldwide live with rare diseases. The average
               patient waits 6–7 years for a correct diagnosis.
