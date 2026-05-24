@@ -6,8 +6,13 @@ const KIT_API_URL = 'https://api.convertkit.com/v3';
 export async function POST(req: NextRequest) {
   try {
     console.log('Subscribe route called');
-    const { email, firstName, tagId } = await req.json();
+    const { email, firstName, tagId, website } = await req.json();
     console.log('Received:', { email, firstName, tagId });
+
+    if (typeof website === 'string' && website.trim() !== '') {
+      console.log('Honeypot triggered, dropping submission:', { email });
+      return NextResponse.json({ success: true });
+    }
 
     if (!email || !tagId) {
       console.error('Missing email or tagId');

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface EmailCaptureProps {
@@ -21,6 +21,7 @@ export default function EmailCapture({
   const [firstName, setFirstName] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [error, setError] = useState('');
+  const honeypotRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,7 +32,7 @@ export default function EmailCapture({
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, firstName, tagId }),
+        body: JSON.stringify({ email, firstName, tagId, website: honeypotRef.current?.value || '' }),
       });
 
       const data = await res.json();
@@ -66,6 +67,15 @@ export default function EmailCapture({
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto">
+      <input
+        ref={honeypotRef}
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ display: 'none' }}
+      />
       <div className="flex flex-col gap-3">
         {showName && (
           <input
