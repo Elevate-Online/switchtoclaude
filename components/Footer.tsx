@@ -29,6 +29,13 @@ export default function Footer() {
             &copy; 2026 Elevate Online
           </div>
         </div>
+        <div className="mt-6 border-t border-gray-200 pt-6 text-center">
+          <p className="mx-auto max-w-2xl text-xs leading-relaxed text-gray-500">
+            This site is an independent guide for people migrating to Claude.
+            Elevate Online is not affiliated with, endorsed by, or sponsored by Anthropic, PBC.
+            &ldquo;Claude&rdquo; is a trademark of Anthropic, PBC, used here to describe the third-party product our guide references.
+          </p>
+        </div>
       </div>
     </footer>
   );
