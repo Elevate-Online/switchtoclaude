@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Switch from ChatGPT to Claude — Free Migration Guide",
   description: "Switch from ChatGPT to Claude in 15 minutes. Import your memory with Anthropic's official tool, then build project instructions with our free generator. Join 1M+ people making the switch.",
   metadataBase: new URL('https://switchtoclaude.com'),
+  alternates: {
+    canonical: 'https://switchtoclaude.com',
+  },
   openGraph: {
     title: "Switch from ChatGPT to Claude — Free Migration Guide",
     description: "Switch from ChatGPT to Claude in 15 minutes. Import your memory with Anthropic's official tool, then build project instructions with our free generator. Join 1M+ people making the switch.",

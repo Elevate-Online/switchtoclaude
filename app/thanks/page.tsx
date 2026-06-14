@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Thank You — Switch to Claude',
   description: 'Thanks for joining! Check your email for the migration guide.',
+  robots: { index: false, follow: true },
   alternates: {
     canonical: 'https://switchtoclaude.com/thanks',
   },
