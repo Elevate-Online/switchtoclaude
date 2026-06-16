@@ -8,6 +8,11 @@ This is **switchtoclaude.com** (also served at switchtoclaude.ai) — a free gui
 **Stack:** Next.js 14+ (App Router), Tailwind CSS, deployed to Vercel via GitHub
 **Domain:** switchtoclaude.com (primary), switchtoclaude.ai (redirect)
 
+## ICP (read before writing copy)
+
+@../_canon/icp.md
+@./icp.md
+
 ---
 
 ## What This Site Does
