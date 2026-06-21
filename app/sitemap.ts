@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://switchtoclaude.com/claude-vs-chatgpt',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://switchtoclaude.com/why-claude-over-chatgpt',
       lastModified: new Date(),
       changeFrequency: 'monthly',
