@@ -32,10 +32,11 @@ That's it. Three pages. Ship fast.
 ### Brand & Visual
 
 - **Tone:** Clean, confident, slightly rebellious. This is for people making a values-driven AND practical decision.
-- **Color palette:** Dark background (near-black or deep navy) with Claude's orange/coral (#D97757 or similar) as accent. White text. Clean, modern, premium feel.
-- **Typography:** Inter or similar clean sans-serif. Large headlines. Generous whitespace.
+- **Color palette (current implementation, 2026-06):** White background (`bg-white`) with near-black text (`text-gray-900`), secondary text (`text-gray-600`), and Claude's terracotta-orange (#D97757) as primary accent for CTAs + links. The original spec called for a dark background but the live site evolved to light. Stay with light unless we decide to re-skin all four pages together.
+- **Typography:** Inter (via next/font/google) for everything. Large headlines, generous whitespace.
 - **NO:** Stock photos, generic AI imagery, robot illustrations, gradient blobs. Keep it typographic and clean.
 - **Inspiration:** Stripe's documentation aesthetic meets a protest movement landing page. Clean but with conviction.
+- **Email capture:** All four pages use the shared `EmailCaptureConvertKit` component with `tagId="16393383"` (the landing-page tag). If a page needs separate conversion attribution, create a dedicated Kit tag first, then swap the `tagId` prop.
 
 ### Layout Principles
 
